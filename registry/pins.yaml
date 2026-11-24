@@ -1,0 +1,36 @@
+tasks:
+  tweet_classifier:
+    tier: fine_tuned_small_llm
+    provider: vllm
+    model: Qwen/Qwen2.5-1.5B-Instruct
+    revision: 8f3c2a1
+    adapter: tweet-classifier-lora-r16
+    prompt_version: v3
+  bet_drafter:
+    tier: fine_tuned_small_llm
+    provider: vllm
+    model: meta-llama/Llama-3.1-8B-Instruct
+    revision: 5d91b07
+    adapter: bet-drafter-lora
+    prompt_version: v1
+  intent_router:
+    tier: fine_tuned_small_llm
+    provider: vllm
+    model: google/gemma-2-2b-it
+    revision: c40e7be
+    adapter: intent-router-lora
+    prompt_version: v1
+  injection_guard:
+    tier: small_encoder
+    provider: local
+    model: microsoft/deberta-v3-small
+    revision: 2b6a9d4
+    adapter: null
+    prompt_version: null
+  tweet_impact:
+    tier: classical_ml
+    provider: local
+    model: tfidf-logreg
+    revision: e17a0c3
+    adapter: null
+    prompt_version: null
