@@ -1,6 +1,6 @@
 # llm-ops
 
-This is the runtime plane for the models in my sportsbook platform. model-foundry builds them. evalgate decides if they ship. This repo watches them live and feeds the failures back.
+Prompts and model versions need the same discipline as code: pinned versions, gradual rollouts, drift alerts and a way to turn incidents into tests. This is that runtime plane. I built it for the models in a sportsbook platform, which is the worked example here. model-foundry builds them. evalgate decides if they ship. This repo watches them live and feeds the failures back.
 
 It does four jobs. Know exactly what is running. Roll changes out gradually. Notice decay fast. Turn incidents into tests.
 
