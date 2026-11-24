@@ -1,0 +1,17 @@
+models:
+  frontier-large-2025-02:
+    kind: paid
+    input_per_1k: "0.003"
+    output_per_1k: "0.015"
+  qwen2.5-1.5b-tweet-lora-r16:
+    kind: open
+    input_per_1k: "0.0002"
+    output_per_1k: "0.0004"
+  llama-3.1-8b-bet-drafter-lora:
+    kind: open
+    input_per_1k: "0.0006"
+    output_per_1k: "0.0012"
+  gemma-2-2b-intent-lora:
+    kind: open
+    input_per_1k: "0.0001"
+    output_per_1k: "0.0002"
